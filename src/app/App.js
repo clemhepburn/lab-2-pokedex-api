@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   async fetchPokedex() {
-    const { search, pokemon } = this.state;
+    const { search } = this.state;
     const response = await request.get(POKEMON_API_URL).query({ pokemon: search });
     this.setState({ pokemon: response.body.results });
   }
