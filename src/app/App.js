@@ -16,6 +16,7 @@ class App extends Component {
 
   async componentDidMount() {
     const response = await request.get(POKEMON_API_URL);
+    this.setState({ pokemon: response.body });
   }
 
   render() {
