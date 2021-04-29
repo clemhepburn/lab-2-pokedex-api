@@ -4,11 +4,18 @@ import Footer from './Footer';
 import Paging from './Paging';
 import Search from './Search';
 import PokemonList from '../pokemon/PokemonList';
+import request from 'superagent';
 import './App.css';
+
+const POKEMON_API_URL = 'https://pokedex-alchemy.herokuapp.com/api/pokedex'; 
 
 class App extends Component {
   state = {
     pokemon: []
+  }
+
+  async componentDidMount() {
+    const response = await request.get(POKEMON_API_URL);
   }
 
   render() {
