@@ -3,12 +3,13 @@ import './PokemonItem.css';
 
 class PokemonItem extends Component {
   render() {
+    const { pokemon } = this.props;
 
     return (
       <li className="PokemonItem">
-        <h3>Squirtle</h3>
-        <p className="ability">Ability</p>
-        <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" />
+        <h3>{pokemon.pokemon}</h3>
+        <p className={'ability'}>{pokemon.ability_1}</p>
+        <img src={pokemon.url_image} alt={pokemon.pokemon} />
       </li>
     );
   }

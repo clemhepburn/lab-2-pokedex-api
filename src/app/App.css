@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .search-options select {
@@ -43,6 +44,10 @@
 
 .search-options input, button, select {
   border: 2px rgb(121, 121, 121) solid;
+}
+
+.App main {
+  overflow: auto;
 }
 
 

@@ -9,13 +9,14 @@ class Search extends Component {
     typeFilter: ''
   }
 
-  handleNameChange = ({ target }) => {
-    this.setState({ nameFilter: target.value });
+  handleNameChange = (e) => {
+    this.setState({ nameFilter: e.target.value });
+    this.handleSubmit(e);
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.onSearch(this.state);
+    this.props.handleSearch(this.state);
   }
 
   render() {
