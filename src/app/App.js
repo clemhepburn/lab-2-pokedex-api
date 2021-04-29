@@ -24,7 +24,7 @@ class App extends Component {
         </section>
 
         <main>
-          <PokemonList />
+          <PokemonList pokemon={pokemon}/>
         </main>
 
         <Footer />
