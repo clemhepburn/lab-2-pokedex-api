@@ -1,8 +1,49 @@
 .App {
   display: grid;
+  height: 100vh;
+  background-color: cornflowerblue;
 }
 
-/* TODO: remove **/
-img {
-  margin: 50px auto;
+.search-options {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
+
+.search-options select {
+  width: 220px;
+  height: 36px;
+  outline: 0;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search-options input {
+  width: 220px;
+  height: 30px;
+  outline: 0;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.search-options span {
+  padding: 5px;
+}
+
+
+.search-options button {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.search-options input, button, select {
+  border: 2px rgb(121, 121, 121) solid;
+}
+
+
+

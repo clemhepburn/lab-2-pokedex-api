@@ -3,19 +3,31 @@ import Header from './Header';
 import Footer from './Footer';
 import Paging from './Paging';
 import Search from './Search';
-import Sort from './Sort';
 import PokemonList from '../pokemon/PokemonList';
-import PokemonItem from '../pokemon/PokemonItem';
 import './App.css';
 
 class App extends Component {
+  state = {
+    pokemon: []
+  }
 
   render() {
+    const { pokemon } = this.state;
     return (
       <div className="App">
-  
-        My React App...
-        <img src="acl-logo.png" className="temp-images" alt="acl logo" />
+
+        <Header />
+
+        <section className="search-options">
+          <Search />
+          <Paging />
+        </section>
+
+        <main>
+          <PokemonList />
+        </main>
+
+        <Footer />
       
       </div>
     );

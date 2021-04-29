@@ -1,0 +1,13 @@
+.Header {
+  font-family: Courier, monospace;
+  background-color:cadetblue;
+  color:darksalmon;
+  padding-left: 20px;
+  box-shadow: 0px 0px 5px darkslateblue;
+}
+
+.Header h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px darkslateblue;
+}

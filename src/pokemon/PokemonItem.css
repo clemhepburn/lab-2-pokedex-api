@@ -1,0 +1,29 @@
+.PokemonItem {
+  list-style: none;
+  background: rgb(241, 240, 235);
+  border: 2px solid rgb(112, 112, 112);
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 40px 20px 140px;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.PokemonItem h3 {
+  margin: 10px 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.PokemonItem p {
+  margin: 0;
+}
+
+
+.PokemonItem img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
