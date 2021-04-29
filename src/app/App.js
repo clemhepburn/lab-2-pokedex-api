@@ -1,6 +1,12 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Paging from './Paging';
+import Search from './Search';
+import Sort from './Sort';
+import PokemonList from '../pokemon/PokemonList';
+import PokemonItem from '../pokemon/PokemonItem';
 import './App.css';
-import React from 'react';
 
 class App extends Component {
 
