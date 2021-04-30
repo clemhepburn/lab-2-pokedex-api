@@ -22,8 +22,7 @@ class App extends Component {
   }
 
   handleSearch = ({ nameFilter }) => {
-    this.setState({ search: nameFilter });
-    this.fetchPokedex();
+    this.setState({ search: nameFilter }, () => this.fetchPokedex());
   }
 
   async componentDidMount() {

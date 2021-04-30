@@ -10,8 +10,7 @@ class Search extends Component {
   }
 
   handleNameChange = (e) => {
-    this.setState({ nameFilter: e.target.value });
-    this.handleSubmit(e);
+    this.setState({ nameFilter: e.target.value }, () => this.handleSubmit(e));
   }
 
   handleSubmit = (e) => {
